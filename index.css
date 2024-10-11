@@ -1,0 +1,98 @@
+p{
+	font-family: arial;
+}
+h1,h2{
+	text-align: center;
+	font-family: times;
+	
+}
+
+h1{
+	color:white;
+}
+
+a{
+	text-decoration:none;
+	
+}
+
+#l{
+	
+	position: relative;
+	top: 5px; 
+	
+
+}
+
+
+
+
+a.link:hover{
+	text-decoration:underline
+}
+a:link,visited{
+	color: white;
+}
+
+a:visited{
+	color: white;
+}
+
+
+
+
+
+header{
+	grid-area:hd;
+	background-color: #444458;
+	border: solid black;
+}
+
+
+
+section{
+	grid-area:se;
+	border-left: solid black;
+	border-right: solid black;
+	border-bottom: solid black;
+}
+
+footer{
+	grid-area:ft;
+}
+
+
+@media screen and (max-width: 1000px) {
+	#wrapper{
+		display:grid;
+		grid-template-columns: 1fr 2fr 1fr ;
+		grid-template-areas:
+		"hd hd hd "
+		"se se na "
+		"se se .  "
+		"ft ft .  "
+	}
+	nav{
+		border-right: solid black;
+		border-bottom: solid black;
+		background-color: #444458;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#wrapper{
+		display:grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas:
+		"na hd hd"
+		"na se se"
+		".  se se"
+		".  ft ft"
+	}
+	nav{
+		grid-area:na;
+		background-color: #444458;
+		width:200px;
+		border: solid black;
+	}
+}
