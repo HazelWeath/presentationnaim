@@ -1,31 +1,42 @@
-p{
-	font-family: arial;
-}
 h1,h2{
 	text-align: center;
 	font-family: times;
-	
 }
 
 h1{
 	color:white;
+	font-size:40px;
+}
+
+h2{
+	font-size:30px
+}
+
+hr{
+	position:relative;
+	top:9px;
+}
+
+p{
+	font-family: arial;
+	padding-left: 15px;
+	font-size:20px;
 }
 
 a{
 	text-decoration:none;
-	
 }
 
 #l{
 	
 	position: relative;
 	top: 5px; 
-	
-
 }
 
-
-
+#n{
+	border: solid black 2px;
+	border-left:none;
+}
 
 a.link:hover{
 	text-decoration:underline
@@ -48,18 +59,24 @@ header{
 	border: solid black;
 }
 
-
-
+nav{
+	grid-area:na;
+	border-right: solid black;
+	border-left: solid black;
+	background-color: #444458;
+}
 section{
 	grid-area:se;
-	border-left: solid black;
-	border-right: solid black;
-	border-bottom: solid black;
+	border:solid;
 }
-
 footer{
 	grid-area:ft;
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -68,16 +85,24 @@ footer{
 		grid-template-columns: 1fr 2fr 1fr ;
 		grid-template-areas:
 		"hd hd hd "
-		"se se na "
-		"se se .  "
-		"ft ft .  "
+		"na na na "
+		"se se se "
+		"ft ft ft "
 	}
-	nav{
-		border-right: solid black;
-		border-bottom: solid black;
-		background-color: #444458;
+	
+	li{
+		display: inline;
+		background: #1f1f25;
+	}
+	
+	ul{
+		text-align:center;
+		font-size:25px;
 	}
 }
+
+
+
 
 @media screen and (min-width: 1000px) {
 	#wrapper{
@@ -94,5 +119,12 @@ footer{
 		background-color: #444458;
 		width:200px;
 		border: solid black;
+	}
+	section{
+		grid-area:se;
+		border-left: solid black;
+		border-right: solid black;
+		border-bottom: solid black;
+		border-top: none;
 	}
 }
