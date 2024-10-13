@@ -38,10 +38,8 @@ a{
 	border-left:none;
 }
 
-a.link:hover{
-	text-decoration:underline
-}
-a:link,visited{
+
+a:link{
 	color: white;
 }
 
@@ -90,9 +88,25 @@ footer{
 		"ft ft ft "
 	}
 	
+	a.link:hover{
+		text-decoration:underline;
+	}
+	
+	a:link{
+		color: #444458;
+	}
+
+	a:visited{
+		color: #444458;
+	}
+		
 	li{
 		display: inline;
-		background: #1f1f25;
+		background: #EFEFEF;
+		margin:20px;
+		padding:7px;
+		border:black 5px;
+		border-style:inset ;
 	}
 	
 	ul{
@@ -114,7 +128,9 @@ footer{
 		".  se se"
 		".  ft ft"
 	}
+	
 	nav{
+		position:fixed;
 		grid-area:na;
 		background-color: #444458;
 		width:200px;
@@ -126,5 +142,17 @@ footer{
 		border-right: solid black;
 		border-bottom: solid black;
 		border-top: none;
+	}
+	a.link:hover{
+		margin:10px
+	}
+	
+	ul{
+		font-size:25px;
+		font-family:arial;
+	}
+	
+	li{
+		margin:5px;
 	}
 }
