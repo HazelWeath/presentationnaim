@@ -1,0 +1,205 @@
+#n{
+	border: solid black 2px;
+	border-left:none;
+}
+
+#l{
+	position: relative;
+	top: 5px; 
+}
+	
+h1,h2{
+	text-align: center;
+	font-family: times;
+}
+
+h1{
+	color:white;
+	font-size:40px;
+}
+	
+h2{
+	font-size:30px
+}
+
+p{
+	font-family: arial;
+	padding-left: 15px;
+	font-size:20px;
+}
+
+hr{
+	position:relative;
+	top:9px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+	body{
+		border: solid black;
+		margin-right:0px;
+		margin-left: 0px;
+	}
+
+	header{
+		grid-area:hd;
+		background: #444458;
+		border-bottom:solid black;
+	}
+
+	nav{
+		grid-area:na;
+	}
+
+	section{
+		grid-area:se;
+	}
+
+	footer{
+		grid-area:ft;
+	}
+
+	#wrapper{
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+		"hd "
+		"na "
+		"se "
+		"se "
+		"ft "
+	}
+
+	#1{
+		grid-area:1;
+	}
+	#2{
+		grid-area:2;
+	}
+	#3{
+		grid-area:3;
+	}
+	#4{
+		grid-area:4;
+	}
+
+	#nav{
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		" 1 2 3 4"
+	}
+
+
+
+	h1,h2{
+		text-align:center;
+	}
+
+	h1{
+		color:White;
+	}
+
+	li{
+		display: inline;
+		text-align:center;
+	
+	}
+
+	ul{
+		margin:0px;
+		padding:0px;
+	}
+
+	h1.som{
+		display:none;
+	}
+
+	a.link:hover{
+		background: white;
+	}
+
+	a.link{
+		color:black;
+		text-decoration:none;
+		font-family:arial;
+		font-size:20px;
+		background:#444458;
+		text-align:center;
+		padding:10px;
+	}
+	
+	#white{
+		background:white;
+	}
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+	#wrapper{
+		display:grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-areas:
+		"na hd hd"
+		"na se se"
+		".  se se"
+		".  ft ft"
+	}
+	
+	header{
+		grid-area:hd;
+		background-color: #444458;
+		border: solid black;
+	}
+
+	nav{
+		position:fixed;
+		grid-area:na;
+		background-color: #444458;
+		width:244px;
+		border: solid black;
+	}
+	section{
+		grid-area:se;
+		border-left: solid black;
+		border-right: solid black;
+	}
+	
+	footer{
+		grid-area:ft;
+		border:solid black;
+	}
+	
+	
+	ul{
+		font-size:20px;
+		font-family:arial;
+	}
+	
+	li{
+		margin:5px;
+		padding-bottom:10px;
+	}
+	
+	a{
+		text-decoration:none;
+	}
+	
+	a:link{
+		color: white;
+	}
+
+	a:visited{
+		color: white;
+	}
+	
+	li.link:hover{
+		margin-left:15px
+	}
+}
