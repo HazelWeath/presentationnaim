@@ -110,7 +110,7 @@ hr{
 	
 	}
 
-	ul{
+	#liste{
 		margin:0px;
 		padding:0px;
 	}
@@ -135,6 +135,22 @@ hr{
 	
 	#white{
 		background:white;
+	}
+	
+	h3{
+		text-align:center;
+	}
+	
+	li.dep:visited{
+		display:block;
+	}
+	
+	li.dep{
+		display:block;
+	}
+	
+	a.black{
+		color:black;
 	}
 }
 
@@ -177,7 +193,7 @@ hr{
 	}
 	
 	
-	ul{
+	#liste{
 		font-size:20px;
 		font-family:arial;
 	}
@@ -191,15 +207,38 @@ hr{
 		text-decoration:none;
 	}
 	
-	a:link{
+	a.link:link{
 		color: white;
 	}
 
-	a:visited{
+	a.link:visited{
 		color: white;
 	}
 	
 	li.link:hover{
 		margin-left:15px
+	}
+	
+	h2.som{
+		color:white;
+		text-decoration:underline;
+	}
+	
+	h3{
+		text-align:center;
+		margin-left:50px;
+	}
+	
+	li.dep{
+		display:block;
+		text-align:center;
+	}
+	
+	a.black{
+		color:black;
+	}
+	
+	a.black:hover{
+		text-decoration:underline;
 	}
 }
