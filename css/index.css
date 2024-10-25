@@ -4,8 +4,7 @@
 }
 
 #l{
-	position: relative;
-	top: 5px; 
+	margin: 10px; 
 }
 	
 h1,h2{
@@ -61,6 +60,7 @@ hr{
 
 	footer{
 		grid-area:ft;
+		background: #444458;
 	}
 
 	#wrapper{
@@ -157,6 +157,14 @@ hr{
 	a.black:hover{
 		text-decoration:underline;
 	}
+	
+	.ftexte{
+		color: white;
+	}
+	
+	#tcent{
+		text-align:center;
+	}
 }
 
 
@@ -195,6 +203,7 @@ hr{
 	footer{
 		grid-area:ft;
 		border:solid black;
+		background: #444458;
 	}
 	
 	
@@ -245,5 +254,13 @@ hr{
 	
 	a.black:hover{
 		text-decoration:underline;
+	}
+	
+	.ftexte{
+		color: white;
+	}
+	
+	#tcent{
+		text-align:center;
 	}
 }
