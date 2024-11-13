@@ -1,12 +1,30 @@
 #n{
 	border: solid black 2px;
-	border-left:none;
+	margin-top: 20px;
 }
 
 #l{
 	margin: 10px; 
 }
-	
+
+#stillinc{
+	width: 80px;
+}
+
+#jeux{
+	width: 200px;
+	margin-top: 20px;
+}
+
+#escalade{
+	width: 200px;
+}
+
+#airsoft{
+	width: 200px;
+}
+
+
 h1,h2{
 	text-align: center;
 	font-family: times;
@@ -23,8 +41,9 @@ h2{
 
 p{
 	font-family: arial;
-	padding-left: 15px;
+	padding-left: 20px;
 	font-size:20px;
+	padding-right: 10px;
 }
 
 hr{
