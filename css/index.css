@@ -61,10 +61,50 @@ hr{
 	top:9px;
 }
 
+form {
+  width: 400px;
+  padding: 20px; 
+  margin: 20px;
+  border:solid black;
+  border-radius: 10px;
+}
 
+div {
+  margin-top: 20px;
+}
 
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
 
+input,
+textarea {
+  font: 15px ;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
 
+input:focus,
+textarea:focus {
+  border-color: black;
+}
+
+textarea {
+  vertical-align: top;
+  height: 50px;
+  resize: vertical;
+}
+
+.button {
+  padding-left: 90px; 
+}
+
+button {
+  margin-left: 10px;
+}
 
 @media screen and (max-width: 1000px) {
 	body{
