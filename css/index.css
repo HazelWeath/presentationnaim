@@ -69,8 +69,8 @@ form {
   border-radius: 10px;
 }
 
-div {
-  margin-top: 20px;
+div.form {
+  margin-bottom:10px;
 }
 
 label {
@@ -87,24 +87,13 @@ textarea {
   border: 1px solid black;
 }
 
-input:focus,
-textarea:focus {
-  border-color: black;
-}
 
 textarea {
   vertical-align: top;
   height: 50px;
-  resize: vertical;
 }
 
-.button {
-  padding-left: 90px; 
-}
 
-button {
-  margin-left: 10px;
-}
 
 @media screen and (max-width: 1000px) {
 	body{
@@ -173,7 +162,7 @@ button {
 		color:White;
 	}
 
-	li{
+	li.link{
 		display: inline;
 		text-align:center;
 	
@@ -216,6 +205,8 @@ button {
 	
 	li.dep{
 		display:block;
+		text-align:center;
+		font-family:arial;
 	}
 	
 	a.black{
