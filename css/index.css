@@ -61,6 +61,10 @@ hr{
 	top:9px;
 }
 
+.arial{
+	font-family:arial;
+}
+
 form { /* Pour le style du formulaire */
   width: 400px;
   padding: 20px; 
